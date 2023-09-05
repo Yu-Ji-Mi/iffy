@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        if (window.location.hostname == "github.io") {
+        if (window.location.host.includes('github.io')) {
             document.write('<h1>ON github pages</h1>');
         } else {
             document.write('<h1>NOT on github pages</h1>');
@@ -16,7 +16,7 @@
     </script>
     <h1>Iffy</h1>
     <script>
-        if (window.location.hostname == "github.io") {
+        if (window.location.host.includes('github.io')) {
             document.write('<img src="https://picsum.photos/id/200/200/300" alt="image displayed because ON github pages">');
         } else {
             document.write('<img src="https://picsum.photos/id/343/200/300" alt="image displayed because not github pages">');
